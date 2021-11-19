@@ -1,5 +1,7 @@
 # DeBot Web Embedding Contest
 
+Example: https://example.debot.ever.arsen12.ru/
+
 ### How to install
 Go to the iframe [generator page](https://debot.ever.arsen12.ru/generate), set the address and the debot network, get the html code of the item and embed it on your website.
 
