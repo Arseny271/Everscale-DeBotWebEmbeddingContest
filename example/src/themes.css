@@ -1,0 +1,51 @@
+body.light, :root {
+  --chat-background-color: rgb(252, 252, 252);
+  --chat-background-secondary-color: rgb(240, 240, 240);
+  --chat-background-border-color: rgb(226, 227, 228);
+  --chat-header-background-color: white;
+  --chat-primary-text-color: rgb(0, 115, 196);
+  --chat-primary-inverted-text-color: white;
+  --chat-default-text-color: black;
+  --chat-default-secondary-text-color: #888888;
+  --chat-default-secondary-2-text-color: rgb(182, 184, 186);
+  --chat-input-error-color: #f44336;
+  --chat-camera-not-ready-background-color: rgb(19, 23, 25);
+  --chat-camera-not-ready-text-color: white;
+  --debot-message-bubble-color: #f4f4f4;
+  --debot-message-text-color: black;
+  --user-message-bubble-color: rgb(0, 131, 224);
+  --user-message-text-color: white;
+  --confirm-yes-bubble-color: rgb(54, 192, 92);
+  --confirm-yes-text-color: white;
+  --confirm-no-bubble-color: rgb(231, 23, 23);
+  --confirm-no-text-color: white;
+  --chat-button-border-color: rgb(0, 115, 196);
+  --chat-button-text-color: rgb(0, 115, 196);
+  --chat-button-background-color: white;
+}
+
+body.dark {
+  --chat-background-color: rgb(32, 38, 42);
+  --chat-background-secondary-color: rgb(41, 47, 50);
+  --chat-background-border-color: rgb(50, 55, 59);
+  --chat-header-background-color: rgb(30, 33, 36);
+  --chat-primary-text-color: rgb(0, 131, 224);
+  --chat-primary-inverted-text-color: white;
+  --chat-default-text-color: white;
+  --chat-default-secondary-text-color: rgb(173, 176, 177);
+  --chat-default-secondary-2-text-color: rgb(182, 184, 186);
+  --chat-input-error-color: #d7180a;
+  --chat-camera-not-ready-background-color: rgb(19, 23, 25);
+  --chat-camera-not-ready-text-color: white;
+  --debot-message-bubble-color: rgb(41, 47, 50);
+  --debot-message-text-color: white;
+  --user-message-bubble-color: rgb(0, 115, 196);
+  --user-message-text-color: white;
+  --confirm-yes-bubble-color: rgb(54, 192, 92);
+  --confirm-yes-text-color: white;
+  --confirm-no-bubble-color: rgb(231, 23, 23);
+  --confirm-no-text-color: white;
+  --chat-button-border-color: rgb(0, 115, 196);
+  --chat-button-text-color: rgb(0, 131, 224);
+  --chat-button-background-color: rgb(32, 38, 42);
+}

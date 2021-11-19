@@ -1,0 +1,70 @@
+body {
+  margin: 0px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+}
+
+a, img {
+  -webkit-user-drag: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+input, textarea {
+  font-family: inherit;
+  outline: none;
+  border: none;
+  padding: 0px;
+}
+
+
+.iframe-wrapper {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 12px;
+  position: relative;
+  padding: 3px;
+}
+
+.iframe-wrapper p {
+  height: 16px;
+  font-size: 16px;
+  line-height: 16px;
+  position: absolute;
+  right: 10px;
+  top: -8px;
+  background: white;
+  padding: 0px 2px;
+}
+
+iframe {
+  width: 100%;
+  height: 800px;
+  border: none;
+}
