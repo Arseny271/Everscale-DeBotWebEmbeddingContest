@@ -1,46 +1,65 @@
-# Getting Started with Create React App
+# DeBot Web Embedding Contest
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###How to install
+Go to the iframe [generator page](https://debot.ever.arsen12.ru/generate), set the address and the debot network, get the html code of the item and embed it on your website.
 
-## Available Scripts
+###Customization
+To change the color palette, CSS variables are used. Light and dark themes are
+available by default. By choosing the custom option, you can create your own
+theme.
 
-In the project directory, you can run:
+background colors:
+`--chat-background-color` 
+`--chat-background-secondary-color`
 
-### `yarn start`
+header background colors:
+`--chat-header-background-color`
+`--chat-background-border-color`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Plain and primary text colors:
+`--chat-primary-text-color`
+`--chat-primary-inverted-text-color`
+`--chat-default-text-color`
+`--chat-default-secondary-text-color`
+`--chat-default-secondary-2-text-color`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Input error message text color:
+`--chat-input-error-color`
 
-### `yarn test`
+Camera unavailable message colors:
+`--chat-camera-not-ready-background-color`
+`--chat-camera-not-ready-text-color`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Colors of messages from debot / user:
+`--debot-message-bubble-color`
+`--debot-message-text-color`
+`--user-message-bubble-color`
+`--user-message-text-color`
 
-### `yarn build`
+Colors of buttons in confirm input:
+`--confirm-yes-bubble-color`
+`--confirm-yes-text-color`
+`--confirm-no-bubble-color`
+`--confirm-no-text-color`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Menu button colors:
+`--chat-button-border-color`
+`--chat-button-text-color`
+`--chat-button-background-color`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+###Advanced use. Interception of interface calls.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If extended mode is enabled, there is an opportunity for interaction between the iframe debot and the user's site. When the debot calls the interface marked as intercepted, the input field will not be displayed inside the iframe, instead a message about the interface triggering will be sent to the site page.
 
-### `yarn eject`
+When a site receives a message from an iframe, it can render input elements on its own and wait for input from the user, or it can immediately send a response "on behalf of the user". The first option is used for advanced styling / hiding controls if changing the color palette is not enough. The second option is used to autocomplete data.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**About security**: not all interface outputs are available for interception. For example, you cannot start a debot, sign and confirm the sending of a transaction "on behalf of the user" This is done to prevent obvious attacks on withdrawing funds without the user's knowledge.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+###New DInterface: AutoCompleteInput
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The new interface is proposed to be used as an alternative to entering "on behalf of the user" described in the previous paragraph.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+`function get(uint32 answerId, bytes id, bytes values) external returns (AutoCompleteStatus status, ...args);`
+`id` - string identifier of the requested data
+`values` - a string with the requested data of type `value_name:value_type:default_value`, if there are several requested variables, they must be listed separated by commas.
+When calling this interface, it should get the requested data by id from the storage, either in any other way, or return the default values. An example of a new interface is now in debot: `0:5f05095ff76770295995bfbe2e9f0f3d7e9d07d3756e553354b84766606b1095`
