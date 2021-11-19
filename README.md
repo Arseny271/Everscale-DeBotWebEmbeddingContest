@@ -77,6 +77,8 @@ If extended mode is enabled, there is an opportunity for interaction between the
 
 When a site receives a message from an iframe, it can render input elements on its own and wait for input from the user, or it can immediately send a response "on behalf of the user". The first option is used for advanced styling / hiding controls if changing the color palette is not enough. The second option is used to autocomplete data.
 
+The example at the beginning of the description demonstrates the work of intercepting interface calls, if you call CountyInput, DateTimeInput, QrCodeInput, the pop-up window will appear not inside the iframe, but outside by intercepting the corresponding calls
+
 **About security**: not all interface outputs are available for interception. For example, you cannot start a debot, sign and confirm the sending of a transaction "on behalf of the user" This is done to prevent obvious attacks on withdrawing funds without the user's knowledge.
 
 ### New DInterface: AutoCompleteInput
