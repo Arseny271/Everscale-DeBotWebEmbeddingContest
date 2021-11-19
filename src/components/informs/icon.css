@@ -1,0 +1,17 @@
+.icon {
+  color: black;
+  background-color: black;
+  mask-size: 60%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon.icon-hidden {
+  background-color: transparent !important;
+  -webkit-mask-image: none !important;
+}

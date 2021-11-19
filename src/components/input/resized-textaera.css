@@ -1,0 +1,29 @@
+.input-resized-textarea {
+  position: relative;
+}
+
+.input-resized-textarea textarea {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  resize: none;
+  background: transparent;
+}
+
+.input-resized-textarea p {
+  visibility: hidden;
+  white-space: pre-wrap;
+}
+
+.input-resized-textarea textarea,
+.input-resized-textarea p {
+  font: inherit;
+}

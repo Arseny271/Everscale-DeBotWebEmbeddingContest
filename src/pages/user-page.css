@@ -1,0 +1,111 @@
+.wallets-page {
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: var(--chat-background-color);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.wallets-header {
+  background-color: var(--chat-header-background-color);
+  height: 60px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.2);
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  padding-left: 8px;
+}
+
+.wallets-grid {
+  margin: 20px 20px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(375px,1fr));
+}
+
+.wallet-info-block {
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid var(--chat-primary-text-color);*/
+  background: var(--chat-header-background-color);
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(34, 60, 80, 0.2);
+  max-width: 100%;
+}
+
+.wallet-info-block-header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  padding-right: 8px;
+  height: 60px;
+  border-bottom: 1px solid var(--chat-background-border-color);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.wallet-info-block-header .icon {
+  margin-left: auto;
+}
+
+.wallet-info-block-editable {
+  margin: 16px;
+}
+
+.wallet-info-block-header input,
+.wallet-info-block-editable input {
+  width: 100%;
+  height: 35px;
+  margin: 5px 0;
+  background-color: var(--chat-background-secondary-color);
+  color: var(--chat-default-text-color);
+  border-radius: 5px;
+  padding: 0px 16px;
+  font-size: 16px;
+}
+
+.wallet-save-button {
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid var(--chat-button-border-color);
+  color: var(--chat-button-text-color);
+  background-color: var(--chat-button-background-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin: 16px;
+  margin-top: 24px;
+  margin-right: 0px;
+}
+
+.wallets-add-button {
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--chat-button-border-color);
+  color: var(--chat-button-text-color);
+  background-color: var(--chat-button-background-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 50px;
+}
+
+.wallet-info-buttons {
+  display: flex;
+
+}
