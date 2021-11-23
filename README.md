@@ -1,6 +1,7 @@
 # DeBot Web Embedding Contest
 
 Example: https://example.debot.ever.arsen12.ru/
+
 Wallets settings: https://debot.ever.arsen12.ru/wallets/ - wallet data is not reported to debots and third-party sites, stored exclusively in the localStorage of the browser
 
 
