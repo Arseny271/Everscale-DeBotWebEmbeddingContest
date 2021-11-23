@@ -1,6 +1,8 @@
 # DeBot Web Embedding Contest
 
 Example: https://example.debot.ever.arsen12.ru/
+Wallets settings: https://debot.ever.arsen12.ru/wallets/ - wallet data is not reported to debots and third-party sites, stored exclusively in the localStorage of the browser
+
 
 ### How to install
 Go to the iframe [generator page](https://debot.ever.arsen12.ru/generate), set the address and the debot network, get the html code of the item and embed it on your website.
