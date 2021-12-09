@@ -1,0 +1,28 @@
+{
+	"ABI version": 2,
+	"header": ["time"],
+	"functions": [
+		{
+			"name": "get",
+			"inputs": [
+				{"name":"answerId","type":"uint32"},
+				{"name":"id","type":"bytes"},
+				{"name":"values","type":"bytes"}
+			],
+			"outputs": [
+				{"name":"status","type":"uint8"}
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	]
+}

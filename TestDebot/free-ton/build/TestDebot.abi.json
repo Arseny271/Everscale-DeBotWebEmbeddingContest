@@ -1,0 +1,339 @@
+{
+	"ABI version": 2,
+	"header": ["pubkey", "time", "expire"],
+	"functions": [
+		{
+			"name": "startDeBot",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "testQuery",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "testUserInfo",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "testAutoCompleteInput",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_autocomplete_result",
+			"inputs": [
+				{"name":"status","type":"uint8"},
+				{"name":"val1","type":"uint8"},
+				{"name":"val2","type":"address"},
+				{"name":"val3","type":"int16"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "testTerminal",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "testAddressInput",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "testAmountInput",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "testSigningBoxInput",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "testEncryptionBoxInput",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "testNumberInput",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "testConfirmInput",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "testCountryInput",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "testDateTimeInput",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "testQRCode",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "testMedia",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "testNetwork",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_http_response",
+			"inputs": [
+				{"name":"statusCode","type":"int32"},
+				{"name":"retHeaders","type":"bytes[]"},
+				{"name":"content","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_media_types",
+			"inputs": [
+				{"name":"mediaTypes","type":"bytes[]"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_algorithms",
+			"inputs": [
+				{"name":"names","type":"bytes[]"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_qrcode_result",
+			"inputs": [
+				{"name":"result","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_qrcode_read_result",
+			"inputs": [
+				{"name":"value","type":"bytes"},
+				{"name":"result","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_date",
+			"inputs": [
+				{"name":"date","type":"int128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_datetime_with_offset",
+			"inputs": [
+				{"name":"datetime","type":"int128"},
+				{"name":"timeZoneOffset","type":"int16"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_timezone_offset",
+			"inputs": [
+				{"name":"timeZoneOffset","type":"int16"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_time",
+			"inputs": [
+				{"name":"time","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_address",
+			"inputs": [
+				{"name":"value","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_uint256",
+			"inputs": [
+				{"name":"value","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_int256",
+			"inputs": [
+				{"name":"value","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_uint128",
+			"inputs": [
+				{"name":"value","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_bool",
+			"inputs": [
+				{"name":"value","type":"bool"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_handle",
+			"inputs": [
+				{"name":"handle","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_none",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "print_bytes",
+			"inputs": [
+				{"name":"value","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "start",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDebotInfo",
+			"id": "0xDEB",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"name","type":"bytes"},
+				{"name":"version","type":"bytes"},
+				{"name":"publisher","type":"bytes"},
+				{"name":"key","type":"bytes"},
+				{"name":"author","type":"bytes"},
+				{"name":"support","type":"address"},
+				{"name":"hello","type":"bytes"},
+				{"name":"language","type":"bytes"},
+				{"name":"dabi","type":"bytes"},
+				{"name":"icon","type":"bytes"}
+			]
+		},
+		{
+			"name": "getRequiredInterfaces",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"interfaces","type":"uint256[]"}
+			]
+		},
+		{
+			"name": "setIcon",
+			"inputs": [
+				{"name":"icon","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDebotOptions",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"options","type":"uint8"},
+				{"name":"debotAbi","type":"bytes"},
+				{"name":"targetAbi","type":"bytes"},
+				{"name":"targetAddr","type":"address"}
+			]
+		},
+		{
+			"name": "setABI",
+			"inputs": [
+				{"name":"dabi","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	]
+}
